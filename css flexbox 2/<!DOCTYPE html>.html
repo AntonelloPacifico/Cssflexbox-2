@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 77%);
+  overflow-x: hidden;
+  padding-top: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2b2b2b;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #2b2bb2;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#twitter"><i class="fa fa-fw fa-wrench"></i> Twitter</a>
+  <a href="#facebook"><i class="fa fa-fw fa-user"></i> Facebook</a>
+  <a href="#instagram"><i class="fa fa-fw fa-envelope"></i> Instagram</a>
+</div>
+     
+</body>
+</html> 
